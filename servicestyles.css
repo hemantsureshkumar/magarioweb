@@ -1,0 +1,144 @@
+body{
+    background-color: #e9a1b9;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+.grid-container{
+    box-sizing: border-box;
+    margin-top:4%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height:100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align:center;
+}
+
+.twrap{
+    background-color:black;
+    color:white;
+    width:90%;
+    margin-left:3%;
+    opacity:0;
+}
+.icons{
+    opacity:0;
+}
+.phoneico{
+    opacity:0
+}
+.cam{
+    transform-origin: center;
+    opacity:0
+}
+
+.cam1{
+    transform-origin: center;
+    opacity:0
+}
+.grid-item{
+    height:100%;
+
+}
+.info{
+    vertical-align: middle;
+    height:100%;
+    padding:0% 10%;
+    opacity:0;
+    text-align: center;
+
+}
+.info h3{
+    padding:1% 2%;
+    opacity:0;
+    background-color:black;
+    color:white;
+
+}
+#close{
+    display:block;
+    float:right;
+    width:30px;
+    height:29px;
+    background:url(https://web.archive.org/web/20110126035650/http://digitalsbykobke.com/images/close.png) no-repeat center center;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns: 10% 90%;
+    width:100%;
+    align-items:center;
+}
+.menu-navigation-round {
+    font:bold 12px Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    margin-left:20%;
+}
+
+.menu-navigation-round a {
+    color: #748c99;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 20px auto;
+    line-height: 2;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu-navigation-round a.selected {
+    color: #ffffff;
+    background-color: #AF4468;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 0 5px auto;
+}
+
+/* Making the navigation menu responsive */
+
+.slicknav_menu {
+    display:none;
+}
+
+@media (max-width: 600px) {
+    .menu-navigation-round{
+        display:none;
+    }
+
+    .slicknav_menu {
+        display:block;
+    }
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .menu-navigation-round{
+        margin-top:6%;
+        margin-right:10%;
+    }
+    .logo{
+        padding-top:50%;
+        margin-left:200%;
+    }
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+}
+.logo{
+    margin-left:200%;
+}
